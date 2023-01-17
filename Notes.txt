@@ -1,0 +1,4 @@
+Good Design Indicators:
+	- Small classes and functions
+   - No duplication
+   - Readable
