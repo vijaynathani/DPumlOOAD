@@ -1,4 +1,7 @@
+17-Jan
 Good Design Indicators:
 	- Small classes and functions
    - No duplication
    - Readable
+
+18-Jan
