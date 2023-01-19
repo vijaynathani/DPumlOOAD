@@ -5,3 +5,8 @@ Good Design Indicators:
    - Readable
 
 18-Jan
+19-Jan
+	Editor:
+		UC1: Load a document
+		UC2: Edit the document
+		UC3: Save the document
