@@ -10,3 +10,7 @@ Good Design Indicators:
 		UC1: Load a document
 		UC2: Edit the document
 		UC3: Save the document
+20-Jan:
+	C++ programs are in Visual Studio project VSapp
+
+
