@@ -5,6 +5,61 @@
 #include <set>
 using namespace std;
 
+class Party {
+public:
+	string location;
+};
+class Person1 : public Party {};
+class Organization : public Party {
+public:
+	vector<Party*> children;
+};
+
+class Author {
+public:
+	string name;
+	int age;
+};
+class Computer {
+public:
+	string name;
+	int memory;
+	Author* usedBy;
+};
+
+
+class Collection {
+public:
+	virtual bool equals(void* other) = 0;
+	virtual void add(void* item) = 0;
+};
+class List : public Collection {
+public:
+	virtual void* get() = 0;
+};
+class AbstractList : public List {
+public:
+	bool equals(void* other) override { return false; }
+	void add(void* item) override {}
+};
+class ArrayList : public AbstractList {
+public:
+	void* get() override { return nullptr; }
+	void add(void* item) override {}
+};
+
+
+
+class EmailSystem {
+public:
+	virtual void send(string message) = 0;
+};
+class SMTPEmailSystem : public EmailSystem {
+public:
+	void send(string message) override {}
+
+};
+
 
 class Employee {};
 class Customer {
@@ -55,4 +110,21 @@ class Order {
 public:
 	void dispatch() {}
 	void close() {}
+};
+
+class Order1 {
+	//map <Product&, OrderLine*> lineItems;
+};
+
+class Meeting {};
+class Attendance {
+	Person* p;
+	Meeting* m;
+	int attentiveness;
+};
+class Company {};
+class Employment {
+	Date start, end;
+	Person* employee;
+	Company* c;
 };
