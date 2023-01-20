@@ -114,6 +114,7 @@ public:
 
 class Order1 {
 	//map <Product&, OrderLine*> lineItems;
+	//Above line is commented because map comparison functions are absent.
 };
 
 class Meeting {};
