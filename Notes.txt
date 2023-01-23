@@ -12,5 +12,81 @@ Good Design Indicators:
 		UC3: Save the document
 20-Jan:
 	C++ programs are in Visual Studio project VSapp
+23-Jan:
+Banking application entities:
+	BankClerk: Loginid, password, empid, emailid
+              dispense cash, stop cheque.
+	Dispatch section
+	Corportate customer
+	Individual customer
+	NewAccount
+	Bank HQ
+	Branch of Bank
+	Account Holder: Name, Address, Mobile, Email
+	            Approve, transaction
+	Welcome Kit
+	Bank
+	Cheque book
+	Account
+	Account Number - Attribute of Account
+	Mobile number of customer
+	Date of A/c opening
+	Transaction - Operation of Account
+	RuPay card
+	Saving Account
+	Current Account
+	Withdrawal
+	RBI
+	Daily Report to RBI
+	Quarterly report to Customer
+	Email/SMS for every transaction
 
+
+
+
+-----------------------------------------------------------
+                           Account
+-----------------------------------------------------------
+Responsibility:                |      Collaborator
+Tracks balance in account      |      Transaction
+                               |      Customer
+                               |
+                               |
+                               |
+                               |
+                               |
+                               |
+------------------------------------------------------------
+
+
+-----------------------------------------------------------
+                          Withdrawal
+-----------------------------------------------------------
+Responsibility                 |      Collaborator
+Track debit in cash, cheque,   | Cheque book
+UPI, NEFT, etc.                | Account
+                               | Account Holder
+                               |
+                               |
+                               |
+                               |
+                               |
+------------------------------------------------------------
+
+
+-----------------------------------------------------------
+                        <<class>>
+-----------------------------------------------------------
+Responsibility                 |      Collaborator
+                               |
+                               |
+                               |
+                               |
+                               |
+                               |
+                               |
+                               |
+------------------------------------------------------------
+
+Draw conceptual class diagram 
 
