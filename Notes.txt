@@ -90,3 +90,6 @@ Responsibility                 |      Collaborator
 
 Draw conceptual class diagram 
 
+24-Jan
+Now draw some activity diagram.
+Email me with use case diagram and conceptual class diagram.
