@@ -95,5 +95,6 @@ Now draw some activity diagram.
 Email me with use case diagram and conceptual class diagram.
 
 25-Jan
-
+Exercise: Draw a state Diagram
+Email it with: Activity and Conceptual class diagram
 
