@@ -7,21 +7,21 @@ using namespace std;
 namespace jan27_1 {
 	class Product {
 	public:
-		double getPricingDetails();
+		double getPricingDetails() { return 0; }
 	};
 	class Customer {
 	public:
-		double getDiscountInfo();
+		double getDiscountInfo() { return 0; }
 	};
 	class OrderLine {
 	public:
-		int getQuantity();
-		Product* getProduct();
+		int getQuantity() { return 0;  }
+		Product* getProduct() { return nullptr; }
 	};
 	class Order {
 		vector<OrderLine> lineItems;
 		Customer* c;
-		double calculateBasePrice();
+		double calculateBasePrice() { return 0; }
 		double calculateDiscounts() {
 			//..
 			auto r = c->getDiscountInfo();
@@ -44,7 +44,7 @@ namespace jan27_2 {
 	class Order;
 	class Product {
 	public:
-		double getPrice(int quantity);
+		double getPrice(int quantity) { return 0; }
 	};
 	class Customer {
 	public:
@@ -62,7 +62,7 @@ namespace jan27_2 {
 		vector<OrderLine> lineItems;
 		Customer* c;
 	public:
-		double getBaseValue();
+		double getBaseValue() { return 0; }
 		double calculatePrice() {
 			double r = 0;
 			for (auto& li : lineItems)
