@@ -100,3 +100,6 @@ Email it with: Activity and Conceptual class diagram
 
 27-Jan
 Exercise: Draw a sequence diagram.
+
+30-Jan
+Exercise: Draw a sequence diagram.
