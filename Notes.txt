@@ -104,3 +104,6 @@ Exercise: Draw a sequence diagram.
 30-Jan
 Exercise: Draw a sequence diagram.
 Exercise: Redraw existing sequence diagram as communication
+
+31-Jan
+Exercise: Send communication diagram for your project.
