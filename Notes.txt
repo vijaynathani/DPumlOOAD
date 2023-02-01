@@ -107,3 +107,33 @@ Exercise: Redraw existing sequence diagram as communication
 
 31-Jan
 Exercise: Send communication diagram for your project.
+
+1-Feb
+Vision Document
+SRS document
+	- Functional
+			Use case
+			Activity
+			Conceptual class diagram
+	- Non Functional requirmenets
+	- Domain requirements
+
+Video of 46 minutes: https://youtu.be/nPQyO02dNHg 
+Key points:
+- Only a good programmer can become a good modeler in design phase.
+- Model on giant whiteboards.
+- Model a lot at the start of the sprint/analysis phase.
+- Only truth is code. UML diagrams assist in writing/understanding code.
+- Notation is not very important; Notation is good if it conveys the message.
+- Sub teams can see each other's UML diagrams.
+- Diagram with programmers and analysts together for shared understanding.
+- Multiple models go together, e.g., Software class diagram and interaction diagram.
+- Document important aspects of the project at the end of the project.
+- UML tool is very useful for reverse engineering i.e. generating diagrams from code.
+- In design, communication diagrams are important.
+
+
+
+
+
+
