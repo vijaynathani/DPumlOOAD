@@ -143,3 +143,6 @@ Weight is a double with functionality, then make is a class.
 Q022 Question - Solution S022
 Q01 - S01
 Q57 - S57
+Exercise: Q58 
+
+
