@@ -132,8 +132,10 @@ Key points:
 - UML tool is very useful for reverse engineering i.e. generating diagrams from code.
 - In design, communication diagrams are important.
 
-
-
-
-
-
+2-Feb
+Airline reservation system:
+Classes: Person, Airline, Ticket, Passenger, etc
+Name is a string, then it comes an attribute in Passenger class.
+Name has firstName and lastName, then it becomes class.
+Weight is an int with no functionality, then make it an attribute.
+Weight is a double with functionality, then make is a class.
