@@ -139,3 +139,6 @@ Name is a string, then it comes an attribute in Passenger class.
 Name has firstName and lastName, then it becomes class.
 Weight is an int with no functionality, then make it an attribute.
 Weight is a double with functionality, then make is a class.
+
+Q022 Question - Solution S022
+Q01 - S01
