@@ -147,5 +147,25 @@ Exercise: Q58
 Solution S58 uploaded
 
 3-Feb
+Class: private, protected, public
 
+Large project will have multiple Bounded contexts.
+Each bounded context will be encapsulated with boundry classes.
+Boundry classes static functions and interfaces.
 
+Bounded contexts are logical entities.
+Components are physical entities.
+
+Library should be encapsulated with boundry classes.
+Boost library 1.70 -> 1.81
+
+Java Hibernate 1072 classes. Documentation was for 20 classes.
+
+if (tc == 1) 
+		...
+else if (tc == 2)
+		...
+else if (tc == 3)
+		...
+else
+	throw RuntimeError("...");
