@@ -173,9 +173,12 @@ else
 Exercise: Q30, Q40, Q43, Q36, Q41
 
 6-Feb:
+Inheritance leads to bigger classes as compared to Delegation.
+Inheritance is less flexible than Delegation.
+If all functionality of base class is not applicable to derived class, then inheritance is flawed.
+Inheritance is more error-prone as compared to Delegation.
 
-
-
+Flawed inheritance: Q72, Q31
 
 
 
