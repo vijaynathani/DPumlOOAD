@@ -171,3 +171,12 @@ else
 	throw RuntimeError("...");
 
 Exercise: Q30, Q40, Q43, Q36, Q41
+
+6-Feb:
+
+
+
+
+
+
+

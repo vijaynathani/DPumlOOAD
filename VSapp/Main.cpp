@@ -4,10 +4,9 @@
 #include <map>
 #include <set>
 using namespace std;
-
-void jan20main();
+void MySetMain();
 int main()
 {
-	jan20main();
+	MySetMain();
 }
 
