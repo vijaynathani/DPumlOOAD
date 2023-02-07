@@ -186,7 +186,7 @@ Any piece of functionality should occur once and once only in our application. D
 - bugs
 - codebase become bigger
 - other minor issues.
-DRY - Q021, Q11, Q33, Q37
+DRY - Q021, Q11, Q33, Q37, Q34
 
 
 
