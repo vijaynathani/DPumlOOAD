@@ -5,20 +5,11 @@ using namespace std;
 class SurveyData {
     string path; //save the data to this file.
     bool hidden; //should the file be hidden?
-    //set the path to save the data according to the type of data (t).
-    void setSavePath(int t) {
-        if (t==0) { //raw data.
-            path = "c:/application/data/raw.dat";
-            hidden = true;
-        } else if (t==1) { //cleaned up data.
-            path = "c:/application/data/cleanedUp.dat";
-            hidden = true;
-        } else if (t==2) { //processed data.
-            path = "c:/application/data/processed.dat";
-            hidden = true;
-        } else if (t==3) { //data ready for publication.
-            path = "c:/application/data/publication.dat";
-            hidden = false;
-        }
+    public:
+    SurveyData(string& path1, bool hidden1) {
+        path = "c:/application/data/" + path1 + ".dat";
+        hidden = hidden1;
     }
 };
+const SurveyData rawData("raw", true), cleanedData("cleanedUp", true), processedData("processed", true),
+                 publicationData("publication", false);
