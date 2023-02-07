@@ -178,7 +178,16 @@ Inheritance is less flexible than Delegation.
 If all functionality of base class is not applicable to derived class, then inheritance is flawed.
 Inheritance is more error-prone as compared to Delegation.
 
-Flawed inheritance: Q72, Q31, Q71, Q52, Q54, Q74, Q75, Q76
+Flawed inheritance: Q72, Q31, Q71, Q52, Q54, Q74, Q75, 
+Q76 - Flatten deep inheritance.
+
+7-Feb:
+Any piece of functionality should occur once and once only in our application. Dupplication will lead to
+- bugs
+- codebase become bigger
+- other minor issues.
+DRY - Q021
+
 
 
 
