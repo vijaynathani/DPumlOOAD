@@ -188,7 +188,20 @@ Any piece of functionality should occur once and once only in our application. D
 - other minor issues.
 DRY - Q021, Q11, Q33, Q37, Q34, Q35
 
+Feb-08:
+Java: 1 Million function calls take 8 milliseconds and 1 Million objects are created in 23 milliseconds
+Most of CPU time is idle.
+Bottleneck: Database or Network.
+When performance critical, Only there I may tolerate big classes/big function.
 
+GoogleTest is a C++ project. Most functions are smaller than 10 lines.
+CLOC tool reported 
+-------------------------------------------------------------------------------
+Language                   files          blank        comment           code
+-------------------------------------------------------------------------------
+C++                       106           8876          11299          36926
+C/C++ Header              49           3732           9719          15164
 
+Exercise: Q56
 
 
