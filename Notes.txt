@@ -202,6 +202,6 @@ Language                   files          blank        comment           code
 C++                       106           8876          11299          36926
 C/C++ Header              49           3732           9719          15164
 
-Exercise: Q56
+Exercise: Q56, Q59
 
 
