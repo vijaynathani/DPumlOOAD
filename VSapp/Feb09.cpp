@@ -4,7 +4,7 @@
 #include <map>
 #include <set>
 using namespace std;
-namespace feb08 {
+namespace feb09 {
 	class Point1 {
 	private:
 		int x, y;
@@ -31,8 +31,8 @@ namespace feb08 {
 		}
 	};
 }
-using namespace feb08;
-void feb08Main() {
+using namespace feb09;
+void feb09Main() {
 	Point1 p1(1,2);
 	p1.move(1, 5);
 	Point2 p2(3, 4);

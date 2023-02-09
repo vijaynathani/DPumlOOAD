@@ -202,6 +202,16 @@ Language                   files          blank        comment           code
 C++                       106           8876          11299          36926
 C/C++ Header              49           3732           9719          15164
 
+The average for GoogleTest is 348 lines per .cpp file. This includes statements like
+	#include
+	#define
+	using
+	function signatures
+	global/extern/static variables
+The actual LOC (lines of code) recommended for a .cpp files is less than or equal to 100 lines.
+Most functions of GoogleTest are less than 10 LOC.
+
 Exercise: Q56, Q59
 
+Feb 09:
 
