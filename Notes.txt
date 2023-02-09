@@ -214,4 +214,17 @@ Most functions of GoogleTest are less than 10 LOC.
 Exercise: Q56, Q59
 
 Feb 09:
+Comments are bad.
+Comments are good, when:
+- I use them to explain "why" I am writing code this way; not what.
+- Documenation for external parties.
+- Warning.
+- ToDo.
+Exercise: Q20
+
+
+
+
+
+
 
