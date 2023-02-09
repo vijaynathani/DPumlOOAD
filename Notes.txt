@@ -220,7 +220,8 @@ Comments are good, when:
 - Documenation for external parties.
 - Warning.
 - ToDo.
-Exercise: Q20, Q06, Q07
+Exercise: Q20, Q06, Q07, Q21, Q22, Q23, Q25
+
 
 
 
