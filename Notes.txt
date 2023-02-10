@@ -222,6 +222,7 @@ Comments are good, when:
 - ToDo.
 Exercise: Q20, Q06, Q07, Q21, Q22, Q23, Q25
 
+Feb 10:
 
 
 
