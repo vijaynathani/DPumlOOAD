@@ -4,7 +4,7 @@
 #include <map>
 #include <set>
 using namespace std;
-namespace feb09 {
+namespace feb10 {
 	class Point1 {
 	private:
 		int x, y;
@@ -31,12 +31,12 @@ namespace feb09 {
 		}
 	};
 }
-using namespace feb09;
-void feb09Main() {
+using namespace feb10;
+void feb10Main() {
 	Point1 p1(1,2);
 	p1.move(1, 5);
 	Point2 p2(3, 4);
-	Point2* p2moved = p2.move(1, 5);
+	auto p2moved =  p2.move(1, 5) ;
 	//...
 	delete p2moved;
 }
