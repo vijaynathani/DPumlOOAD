@@ -36,7 +36,6 @@ void feb10Main() {
 	Point1 p1(1,2);
 	p1.move(1, 5);
 	Point2 p2(3, 4);
-	auto p2moved =  p2.move(1, 5) ;
+	unique_ptr<Point2> p2moved{ p2.move(1, 5) };
 	//...
-	delete p2moved;
 }

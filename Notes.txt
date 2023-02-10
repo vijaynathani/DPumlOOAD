@@ -223,6 +223,31 @@ Comments are good, when:
 Exercise: Q20, Q06, Q07, Q21, Q22, Q23, Q25
 
 Feb 10:
+Why prefer Point1?
+	- In C++, I have to remember to delete, if I use Point2.
+Point1 - Mutable
+Point2 - Immutable
+Advantages of Immutability
+	1. Thread-safe
+	2. less error-prone
+	3. Sharing
+
+In Java/C#, if contents are important and not the number
+then make the class immutable.
+e.g. Point, Color, Dimension - Immutable
+Employee, Window - Mutable
+In C++, use Immutable when advantages > disadvantages.
+
+	get lock
+
+	....processing...
+
+	free lock
+
+Exercise: Q50
+
+
+
 
 
 
