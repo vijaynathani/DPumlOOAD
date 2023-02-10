@@ -244,7 +244,7 @@ In C++, use Immutable when advantages > disadvantages.
 
 	free lock
 
-Exercise: Q50
+Exercise: Q50, Q51, Q55
 
 
 
