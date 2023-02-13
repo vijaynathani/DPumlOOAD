@@ -283,8 +283,7 @@ public:
 	bool mouseMove() { return true;}
 };
 
-
-
+Exercise Q28, QCardChips
 
 
 
