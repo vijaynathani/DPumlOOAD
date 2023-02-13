@@ -33,5 +33,11 @@
     <ClCompile Include="Feb10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Feb13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

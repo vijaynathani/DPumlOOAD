@@ -247,6 +247,51 @@ In C++, use Immutable when advantages > disadvantages.
 Exercise: Q50, Q51, Q55
 Email me S55
 
+Feb 13:
+	int My_open(char *filename, int mode) {
+		int r = open(filename, mode);
+		if (r == -1)
+				throw
+		return r;
+	}
+
+	if (open("filename", mode) == ERROR)
+			...
+	My_open("filename", mode);
+
+	totalPay = 0;
+	vector<Employee *> *employees = getEmployees();
+	if (employees != nullptr)
+		for (auto e : employees)
+			totalPay += e->getPay();
+
+
+class MouseEventaHandler {
+public:
+	virtual bool mouseDown() = 0;
+	virtual bool mouseMove() = 0;
+};
+class MouseEventHandlerStandard : public MouseEventHandler {
+public:
+	bool mouseDown() { ... }
+	bool mouseMove() { ... }
+};
+
+class NullMouseEventHandler : public MouseEventHandler {
+public:
+	bool mouseDown() { return true; }
+	bool mouseMove() { return true;}
+};
+
+
+
+
+
+
+
+
+		
+
 
 
 

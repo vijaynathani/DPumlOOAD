@@ -1,6 +1,3 @@
-# **No training on 11-Feb. This session is cancelled.**
-
-
 ### Training on UML, OO principles, and Design Patterns.
 
 This website is at <https://github.com/vijaynathani/DPumlOOAD>
