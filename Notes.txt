@@ -299,6 +299,9 @@ string func1() {
 }
 "ab:cd:xy:pqr"
 Exercise: Q26
+If I want isolation, I will add getter function.
+If the others are changing my internal values, then I prefer they call setter 
+
 
 
 

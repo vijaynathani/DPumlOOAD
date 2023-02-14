@@ -16,6 +16,6 @@ Please note
 - The training is for 32 hours total on dates:
     * Jan: 17,18,19,20,23,24,25,27,30,31
     * Feb: 1,2,3,6,7,8,9,10,13,14,15,16,17,20,21,22,23,24,27,28
-    * Mar: 1 and maybe 2
+    * Mar: 1,2
 
 This repository will be deleted one week after the training is over.
