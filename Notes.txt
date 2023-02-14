@@ -286,12 +286,19 @@ public:
 Exercise Q28, QCardChips
 
 Feb 14:
+Circuit Breaker:
+	Start Timer
+	Make remote call in a new thread
+	If remote call finishes in a short time, then 
+		join the thread
+		return remote value.
+	interrupt the remote thread
+	throw exception
 
-
-
-
-		
-
+string func1() {
+}
+"ab:cd:xy:pqr"
+Exercise: Q26
 
 
 
