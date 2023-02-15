@@ -302,8 +302,43 @@ Exercise: Q26
 If I want isolation, I will add getter function.
 If the others are changing my internal values, then I prefer they call setter 
 
+Feb 15:
+Minimize the use of getter/setter
 
+Properties
+	map<void *, void *> 
+	map<string *,string *> asso;
+	asso->add("key1", "value1")
+	asso->add(&i, &d);
+	asso->store("filename")
 
+Fail-fast: In case of problems, the earlier we catch it, the better.
+Pass objects in bussiness domain mostly; not primitives.
+
+logging.level = Info
+logging.Warning("function entered");
+
+Log in production
+
+Interface = public function signature of class
+class Modem {
+public:
+	virtual void dial(string pno) = 0;
+   virtual void hangup() = 0;
+   virtual void send(char c) = 0;
+   virtual char recv() = 0;
+}
+class ICreditCard {
+public:
+		virutal void makePayment(double amount) = 0;
+};
+class CreditCard : public ICreditCard {
+	....
+	public:
+		void makePayment(double amount);
+	....
+};
+Exercise: Q45
 
 
 

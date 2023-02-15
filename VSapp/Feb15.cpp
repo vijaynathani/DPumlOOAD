@@ -3,10 +3,11 @@
 #include <vector>
 #include <map>
 #include <set>
+#include <random>
+#include <cassert>
 using namespace std;
-void feb15Main();
-int main()
-{
-	feb15Main();
+namespace feb15 {
 }
-
+using namespace feb15;
+void feb15Main() {
+}
