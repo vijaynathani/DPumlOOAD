@@ -1,6 +1,12 @@
 #include <iostream>
 
-class PersonalLoanValidator {
+class IValidator {
+	public:
+	virtual bool isValid() = 0;
+	virtual ~IValidator() {}
+};
+
+class PersonalLoanValidator : public IValidator {
 	public: 
 	bool isValid() {
         //Validation logic
@@ -8,7 +14,8 @@ class PersonalLoanValidator {
     }
 	//...
 };
-class VehicleLoanValidator {
+
+class VehicleLoanValidator : public IValidator {
 	public: 
 	bool isValid() {
         //Validation logic
@@ -16,22 +23,13 @@ class VehicleLoanValidator {
     }
 	//...
 };
-//Suppose you are writing a module to approve personal loans and 
-//before doing that you want to validate the personal information.
-//Later on, its required to approve vehicle loans, consumer goods loans 
-//and what not. 
+
 class LoanApprovalHandler {
     public:
-	void approvePersonalLoan(PersonalLoanValidator *validator) {
+	void approveLoan(IValidator *validator) {
         if (validator->isValid()) {
             //Process the loan.
         }
     }
-    void approveVehicleLoan(VehicleLoanValidator *validator) {
-        if (validator->isValid()) {
-            //Process the loan.
-        }
-    }
-    // Methods for approving other loans.
+    //...
 };
-//Improve above code
