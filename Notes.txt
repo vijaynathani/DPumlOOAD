@@ -338,7 +338,8 @@ class CreditCard : public ICreditCard {
 		void makePayment(double amount);
 	....
 };
-Exercise: Q45
+Exercise: Q45, Q44, Q39
+Homework: Q83, Q84
 
 
 

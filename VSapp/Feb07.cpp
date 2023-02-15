@@ -23,7 +23,8 @@ namespace feb07 {
 		return r;
 	}
 	double computeAreaOfCircle(double radius) {
-		assert(radius > 0); //Pre-condition
+		if (radius < 0)
+			throw runtime_error("radius -ve");
 		const double PI = 22 / 7.0;
 		assert(PI > 3 && PI < 4);
 		auto area = PI * radius * radius;
