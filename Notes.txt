@@ -341,9 +341,11 @@ class CreditCard : public ICreditCard {
 Exercise: Q45, Q44, Q39
 Homework: Q83, Q84
 
+Feb 16:
+DIP: When you write type of a variable 
+	(in a function parameter or return type from function)
+	if you want loose coupling, use intefaces/abstract class
+   else if you want strong coupling, use concrete class
+   else currently strong coupled but potential for loose coupling
 
-
-
-
-
-
+Pure functions: Q60
