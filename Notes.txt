@@ -348,4 +348,4 @@ DIP: When you write type of a variable
    else if you want strong coupling, use concrete class
    else currently strong coupled but potential for loose coupling
 
-Pure functions: Q60
+Pure functions: Q60, Q61
