@@ -22,7 +22,7 @@ class ZipEngine {
 	public: void makeZip(string *zipFilePath, 
 					vector<string *> &srcFilePaths, ZipMainFrame *f);
 };
-class ZipMainFrame : public Frame { //View
+class ZipMainFrame : public Frame {
     StatusBar *sb;
 	public:
     void makeZip() {
@@ -38,7 +38,7 @@ class ZipMainFrame : public Frame { //View
     }
 	//...
 };
-void ZipEngine::makeZip(string *zipFilePath,  //Model
+void ZipEngine::makeZip(string *zipFilePath, 
 		vector<string *> &srcFilePaths, ZipMainFrame *f) {
 	//create zip file at the path.
 	//...

@@ -352,6 +352,8 @@ Pure functions: Q60, Q61
 
 Feb 17:
 Q77
+Higher order function: A function which takes function pointer as
+parameter or returns a function pointer.
 
 
 
