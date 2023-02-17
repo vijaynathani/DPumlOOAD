@@ -1,12 +1,9 @@
-/*This is a small program handling zip files. The user can input the
- * path to the zip file such as c:\f.zip and the paths to the files
- * that he would like to add to the zip file such as c:\f1.doc,
- * c:\f2.doc and etc. in the main frame, then the program will compress
- * f1.doc and f2.doc and create f.zip. When it is compressing each file,
- * the status bar in the main frame will display the related message.
- * For example, when it is compressing c:\f2.doc,
- * the status bar will display "zipping c:\f2.zip".
+/* Problems	in the code
+ * - circular references. DIP violated.
+ *	 Code not reusable in a different enviroment
+ * - SRP violated
  */
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -17,13 +14,27 @@ class StatusBar {
 	public: void setText(string &message);
 	//...
 };
-class ZipMainFrame;
-class ZipEngine {
-	public: void makeZip(string *zipFilePath, 
-					vector<string *> &srcFilePaths, ZipMainFrame *f);
+class MessageDisplay {
+	public: virtual void showMessage(string msg) = 0;
 };
-class ZipMainFrame : public Frame {
+class ZipEngine {
+	public: 
+	void ZipEngine::makeZip(string *zipFilePath, 
+			vector<string *> &srcFilePaths, MessageDisplay *msg) {
+		//create zip file at the path.
+		//...
+		for (unsigned int i = 0; i < srcFilePaths.size(); i++) {
+			msg->showMessage("Zipping "+ (*srcFilePaths[i]));
+			//add the file srcFilePaths[i] into the zip file.
+			//...
+		}
+	}
+};
+class ZipMainFrame : public Frame, MessageDisplay {
     StatusBar *sb;
+    void setStatusBarText(string &statusText) {
+        sb->setText(statusText);
+    }
 	public:
     void makeZip() {
         string *zipFilePath;
@@ -33,19 +44,21 @@ class ZipMainFrame : public Frame {
         ZipEngine *ze = new ZipEngine();
         ze->makeZip(zipFilePath, srcFilePaths, this);
     }
-    void setStatusBarText(string statusText) {
-        sb->setText(statusText);
-    }
+	virtual void showMessage(string msg) {
+		setStatusBarText(msg);
+	}
 	//...
 };
-void ZipEngine::makeZip(string *zipFilePath, 
-		vector<string *> &srcFilePaths, ZipMainFrame *f) {
-	//create zip file at the path.
-	//...
-	for (unsigned int i = 0; i < srcFilePaths.size(); i++) {
-		f->setStatusBarText("Zipping "+ (*srcFilePaths[i]));
-		//add the file srcFilePaths[i] into the zip file.
+class TextModeApp  : public MessageDisplay {
+	public: void makeZip() {
+		string *zipFilePath;
+		vector<string *>srcFilePaths;
+		//...
+		ZipEngine *ze = new ZipEngine();
+		ze->makeZip(zipFilePath, srcFilePaths,this);
 		//...
 	}
-}
-
+	virtual void showMessage(string msg) {
+		cout << msg;
+	}
+};
