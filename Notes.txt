@@ -357,4 +357,10 @@ parameter or returns a function pointer.
 Q80 
 Exercise Q81, Q82
 
+cyclomatic complexity    Fan-in
+   Low                    Low     - OK
+   Low                    High    - OK
+   High                   Low     - OK
+   High                   High    - Problem
+
 
