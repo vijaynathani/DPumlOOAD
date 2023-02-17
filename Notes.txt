@@ -354,6 +354,7 @@ Feb 17:
 Q77
 Higher order function: A function which takes function pointer as
 parameter or returns a function pointer.
-
+Q80 
+Exercise Q81, Q82
 
 
