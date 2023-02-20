@@ -364,6 +364,10 @@ cyclomatic complexity    Fan-in
    High                   High    - Problem
 
 Feb 20:
+DIP - QCoffee
+Hardware API is given
+Draw software class diagram.
+
 Database Markup Language (DBML)
 Documentation at https://www.dbml.org/docs/
 ER diagaram at https://dbdiagram.io
