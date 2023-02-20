@@ -363,4 +363,7 @@ cyclomatic complexity    Fan-in
    High                   Low     - OK
    High                   High    - Problem
 
-
+Feb 20:
+Database Markup Language (DBML)
+Documentation at https://www.dbml.org/docs/
+ER diagaram at https://dbdiagram.io
