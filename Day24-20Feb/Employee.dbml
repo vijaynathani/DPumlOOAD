@@ -1,0 +1,42 @@
+//Companies that have Employees
+//Employees work on projects
+Table Company {
+	id int [pk, increment]
+	name varchar
+	addressLine1 varchar
+	addressLine2 varchar
+	city varchar
+	zipcode varchar
+	mobile varchar
+}
+Table Employee {
+	id int [pk, increment]
+	firstName varchar
+	lastName varchar
+	mobile varchar
+	companyId int [ref: > Company.id]
+}
+Table Project {
+	id int [pk, increment]
+	name varchar
+	start date
+	end date
+	companyId int [ref: > Company.id]
+}
+Table EmployeeProject {
+	id long [pk, increment]
+	projectId int [ref: > Project.id]
+	employeeId int [ref: > Employee.id]
+	startWorking date
+	endWorking date
+	Indexes {
+		(projectId, employeeId) 
+		(employeeId, projectId)
+	}
+}
+
+
+
+
+
+
