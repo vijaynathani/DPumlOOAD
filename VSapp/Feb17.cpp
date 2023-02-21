@@ -11,7 +11,7 @@
 using namespace std;
 namespace feb17 {
 	class B1 { //...
-		char* mesg;
+		const char* mesg;
 		B1(const char* message) : mesg{ message } { }
 	public:
 		virtual void process() { cout << mesg; }

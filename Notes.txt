@@ -376,3 +376,11 @@ Exercise: Library Management system
 Students, Books and 
 Which student has borrowed which book
 Send me the ER diagram in png format.
+
+Feb 21:
+General Rule
+  If Database is simple, then use JDBC/SimpleApi++
+  If Database is complex, then use Hibernate/ODB
+Practical Rule
+  When people use C++, use simple
+  When people use Java/C#, use ORM
