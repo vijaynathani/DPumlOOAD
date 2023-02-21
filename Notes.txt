@@ -384,3 +384,8 @@ General Rule
 Practical Rule
   When people use C++, use simple
   When people use Java/C#, use ORM
+
+Exercise: 
+Draw software class diagram for HR application
+Assume Domain model
+
