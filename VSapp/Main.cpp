@@ -4,9 +4,9 @@
 #include <map>
 #include <set>
 using namespace std;
-void feb21Main();
-int main()
+void feb22Main(int argc, char** argv);
+int main(int argc, char** argv)
 {
-	feb21Main();
+	feb22Main(argc, argv);
 }
 
