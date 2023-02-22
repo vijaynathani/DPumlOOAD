@@ -15,6 +15,7 @@ namespace feb21_Simple {
 		int id;
 		string name, addressLine1, addressLine2, city, zipcode, mobile;
 	public:
+		/* code commented to eliminate syntax errors
 		void addRecord(dbConnection& db) {
 			SACommand insert(&db, "Insert into Company(name, city) values (:1, :2");
 			insert << "Kpit" << "Pune";
@@ -29,12 +30,13 @@ namespace feb21_Simple {
 			r->id = select[1].asInt;
 			r->name = select[2].asString();
 			return r;
-		}
+		}*/
 	};
 }
 namespace feb21_ORM{ //ODB library
-#pragma db object
+//#pragma db object
 	class Address {
+	public:
 		string addressLine1, addressLine2, city, zipcode;
 	};
 	class Company {
@@ -43,20 +45,19 @@ namespace feb21_ORM{ //ODB library
 		string name;
 		Address addr;
 		string mobile;
-	}
-
+	};
 }
 using namespace feb21_ORM;
 void feb21Main() {
-	auto db = new odb::oracle::database("dbName", "user", "password");
+	//auto db = new odb::oracle::database("dbName", "user", "password");
 	Company c1;
 	c1.name = "vijay";
-	c1.city = "Mumbai";
-	db->persist(&c1);
+	c1.addr.city = "Mumbai";
+	/* db->persist(&c1);
 
 	odb::result<Company> r(db->query<Company>::id < 5);
 	for (auto& row : r)
 		cout << row->name();
 
-	delete db;
+	delete db; */
 }
