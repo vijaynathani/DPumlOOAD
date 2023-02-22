@@ -1,0 +1,31 @@
+//Database design for HR application
+Table Employee {
+	id int [pk, increment]
+	name varchar(20)
+	address varchar
+	classification char //F-fixed H-hourly C commissioned
+}
+Table FixedSalary {
+	empid int [pk, ref: > Employee.id]
+	salary decimal
+}
+Table Commissioned {
+	empid int [pk, ref: > Employee.id]
+	commision decimal
+}
+Table SalesReceipts {
+	id int [pk, increment]
+	empid int [ref: > Employee.id]
+	sale date
+	amount decimal
+}
+Table Hourly {
+	empid int [pk, ref: > Employee.id]
+	hourlyRate decimal
+}
+Table TimeCard {
+	id int [pk, increment]
+	empid int [ref: > Employee.id]
+	work date
+	hours int
+}
