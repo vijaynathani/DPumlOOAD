@@ -389,3 +389,4 @@ Exercise:
 Draw software class diagram for HR application
 Assume Domain model
 
+Feb 22:

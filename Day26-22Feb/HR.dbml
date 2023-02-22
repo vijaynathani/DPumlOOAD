@@ -15,7 +15,7 @@ Table Deduction {
 }
 Table EmployeeDeduction {
 	id int [pk, increment]
-	deductId [ref: > Deduction.id]
+	deductId int [ref: > Deduction.id]
 	empid int [ref: > Employee.id]
 	deduct date
 	amount decimal
