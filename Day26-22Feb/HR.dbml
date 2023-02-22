@@ -4,6 +4,33 @@ Table Employee {
 	name varchar(20)
 	address varchar
 	classification char //F-fixed H-hourly C commissioned
+	periodForPay char //W-Weekly F-fortnightly M-monthly
+	paymentMethod char //P-postal M-ManualPickup D-DirectDeposit
+}
+Table Deduction {
+	id int [pk, increment]
+	name varchar
+	periodForDeduction int
+	amount deduction
+}
+Table EmployeeDeduction {
+	id int [pk, increment]
+	deductId [ref: > Deduction.id]
+	empid int [ref: > Employee.id]
+	deduct date
+	amount decimal
+	indexes {
+		(empid, deduct)
+	}
+}
+Table Postal { //Employee.paymentMethod = 'P'
+	empid int [pk, ref: > Employee.id]
+	address varchar
+}
+Table DirectDeposit { //Employee.paymentMethod = 'D'
+	empid int [pk, ref: > Employee.id]
+	bankName varchar(20)
+	accountNumber number(16)
 }
 Table FixedSalary {
 	empid int [pk, ref: > Employee.id]
