@@ -390,3 +390,7 @@ Draw software class diagram for HR application
 Assume Domain model
 
 Feb 22:
+
+Feb 23:
+	JavaApp is an IntelliJ Java project for Unit Testing with JUnit.
+	VSapp is a Visual Studio project for Unit Testing with GoogleTest
