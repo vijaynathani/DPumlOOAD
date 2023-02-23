@@ -397,8 +397,9 @@ Feb 23:
 
 look at codebase - Draw uml diagrams
 
-
-
 	JavaApp is an IntelliJ Java project for Unit Testing with JUnit. By default, it uses JDK 17.
 	VSapp is a Visual Studio project for Unit Testing with GoogleTest. Add gmock in Nuget to compile/run.
+
+Exercise: TicTacToe
+
 

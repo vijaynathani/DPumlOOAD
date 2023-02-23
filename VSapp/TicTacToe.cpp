@@ -40,8 +40,10 @@ namespace feb23 {
             if (board[0][2] != ' ' && board[0][2] == board[1][1]
                 && board[0][2] == board[2][0])
                 return true;
-            //Write code to check for a tie or draw
-            return false;
+            for (int x = 0; x < BOARD_SIZE; ++x)
+                for (int y = 0; y < BOARD_SIZE; ++y)
+                    if (board[x][y] == BLANK) return false;
+            return true;;
         }
     };
 }
@@ -58,8 +60,50 @@ TEST(TicTacToe, GameOverWhenAllElementsOfRowAreSame) {
     t.setO(0, 2);
     EXPECT_TRUE(t.over());
 }
-//Write other tests for
-//    game over when all column elements are same
-//    game over when all left diagonal elements are same
-//    game over when all right diagonal elements are same
-//    game over when there is a tie or "no winner"
+TEST(TicTacToe, GameOverWhenAllElementsOfColAreSame) {
+    TicTacToe t;
+    EXPECT_FALSE(t.over());
+    t.setX(0, 1);
+    EXPECT_FALSE(t.over());
+    t.setX(1, 1);
+    EXPECT_FALSE(t.over());
+    t.setX(2, 1);
+    EXPECT_TRUE(t.over());
+}
+TEST(TicTacToe, GameOverWhenAllElementsOfLeftDiagonalAreSame) {
+    TicTacToe t;
+    EXPECT_FALSE(t.over());
+    t.setX(0, 0);
+    EXPECT_FALSE(t.over());
+    t.setX(1, 1);
+    EXPECT_FALSE(t.over());
+    t.setX(2, 2);
+    EXPECT_TRUE(t.over());
+}
+TEST(TicTacToe, GameOverWhenAllElementsOfRightDiagonalAreSame) {
+    TicTacToe t;
+    EXPECT_FALSE(t.over());
+    t.setO(0, 2);
+    EXPECT_FALSE(t.over());
+    t.setO(1, 1);
+    EXPECT_FALSE(t.over());
+    t.setO(2, 0);
+    EXPECT_TRUE(t.over());
+}
+TEST(TicTacToe, GameOverWhenBoardFilledWithNoWinner) {
+    TicTacToe t;
+    //   OXO
+    //   XOX
+    //   XOX
+    t.setO(0, 0);   EXPECT_FALSE(t.over());
+    t.setX(0, 1);   EXPECT_FALSE(t.over());
+    t.setO(0, 2);   EXPECT_FALSE(t.over());
+    t.setX(1, 0);   EXPECT_FALSE(t.over());
+    t.setO(1, 1);   EXPECT_FALSE(t.over());
+    t.setX(1, 2);   EXPECT_FALSE(t.over());
+    t.setX(2, 0);   EXPECT_FALSE(t.over());
+    t.setO(2, 1);   EXPECT_FALSE(t.over());
+    t.setX(2, 2);  
+    EXPECT_TRUE(t.over());
+}
+
