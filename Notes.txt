@@ -402,4 +402,32 @@ look at codebase - Draw uml diagrams
 
 Exercise: TicTacToe
 
+Feb 24:
+In Github, I have corrected the directory name used yesterday. 
+
+	S  - SRP
+	O  - OCP
+	L  - LSP
+	I  - ISP
+	D  - DIP
+
+Reasons for poor design:
+	Lack of skills
+   Time constraint
+	Lack of motivation
+
+Aim: Core domain should be well designed.
+
+
+Word editor:
+	After 2 weeks, I have a notepad
+	After 4 weeks, I have wordpad
+	After 8 weeks, I have features like spellcheck, print, save.
+
+Exercise:
+	Movie, Rental, Customer classes
+		For C++: Movie.cpp contains all 3 classes
+		For Java: MovieJavaProblem folder contains 3 files
+	Refactor
+
 
