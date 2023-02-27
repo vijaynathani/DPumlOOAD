@@ -440,3 +440,6 @@ Inheritance:
 Exception:
 	C++: unchecked, throw a object/primitive; and catch it by value/reference.
 	Java: checked & unchecked exceptions; throw only objects and you have to catch it by reference
+
+C++ Proxy code is in VSapp
+Java Proxy code is in JavaApp
