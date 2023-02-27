@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.demo.FindPrimesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-27T09:16:53" hostname="HOPC555444" time="0.02">
+<testsuite name="org.demo.FindPrimesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-27T13:14:25" hostname="HOPC555444" time="0.017">
   <properties/>
-  <testcase name="test_nonprime_number_ignored()" classname="org.demo.FindPrimesTest" time="0.018"/>
+  <testcase name="test_nonprime_number_ignored()" classname="org.demo.FindPrimesTest" time="0.015"/>
   <testcase name="test_prime_number_written()" classname="org.demo.FindPrimesTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
