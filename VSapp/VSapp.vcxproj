@@ -137,6 +137,7 @@
     <ClCompile Include="Feb17.cpp" />
     <ClCompile Include="Feb21.cpp" />
     <ClCompile Include="Feb23.cpp" />
+    <ClCompile Include="Feb27.cpp" />
     <ClCompile Include="Jan20.cpp" />
     <ClCompile Include="Jan27.cpp" />
     <ClCompile Include="Main.cpp" />
