@@ -8,6 +8,6 @@ void feb27Main(int argc, char** argv);
 void feb23Main(int argc, char** argv); //Runs all tests
 int main(int argc, char** argv)
 {
-	feb27Main(argc, argv);
+	feb23Main(argc, argv);
 }
 

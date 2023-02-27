@@ -430,4 +430,13 @@ Exercise:
 		For Java: MovieJavaProblem folder contains 3 files
 	Refactor
 
-
+Feb 27:
+Encapsulation: 
+	C++: private, protected, public
+   Java: private, protected, package, public
+Inheritance:
+	C++: public, private, protected; multiple inheritance
+   Java: public; single class inheritance
+Exception:
+	C++: unchecked, throw a object/primitive; and catch it by value/reference.
+	Java: checked & unchecked exceptions; throw only objects and you have to catch it by reference
