@@ -63,8 +63,19 @@
     <ClCompile Include="Feb27.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Feb28.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderWarehouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OrderWarehouse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
