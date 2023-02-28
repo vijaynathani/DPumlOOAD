@@ -12,11 +12,12 @@ using namespace std;
 namespace feb28 {
 	struct MockWarehouse: public IWarehouse
 	{
+		bool returnFromHasInventory = true;
 		int removeCalled = 0;
 		string removeProduct;
 		int removeQuantity;
 		bool hasInventory(const std::string& product, int quantity) override { 
-			return true; 
+			return returnFromHasInventory; 
 		}
 		void remove(const std::string& product, int quantity) override {
 			removeCalled++;
@@ -34,6 +35,15 @@ namespace feb28 {
 		EXPECT_EQ(1, mwh.removeCalled);
 		EXPECT_EQ(ipod, mwh.removeProduct);
 		EXPECT_EQ(quantity, mwh.removeQuantity);
+	}
+	TEST(Warehouse, OutOfStockTest) {
+		MockWarehouse mwh;
+		const string ipod{ "ipod" };
+		const int quantity{ 50 };
+		Order order{ ipod, quantity };
+		mwh.returnFromHasInventory = false;
+		order.fill(&mwh);
+		EXPECT_EQ(0, mwh.removeCalled);
 	}
 	/*
 	Write the following tests for class Order by mocking out Warehouse
