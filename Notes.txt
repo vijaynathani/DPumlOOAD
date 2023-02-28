@@ -443,3 +443,23 @@ Exception:
 
 C++ Proxy code is in VSapp
 Java Proxy code is in JavaApp
+
+Feb 28:
+WindowListener interface
+	WindowMinismized
+	WindowMaximized
+   WindowClosed
+
+Class MyWindow extends WindowAdapter {
+	public override void WindowClosed() {...}
+}
+
+Exercise on Proxy Design Pattern:
+Don't change classes Warehouse, EventBus, Realwarehouse and Order
+In JavaApp:
+	M3OrderWarehouse.java - Don't change this code
+   M3OrderWarehouseTest.java - Write tests using proxy design pattern
+In VSapp:
+	OrderWarehouse.h OrderWarehouse.cpp - Don't change to this code 
+   Feb28.cpp - Write test using proxy design pattern.
+
