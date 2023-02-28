@@ -21,17 +21,43 @@ public class M3OrderWarehouseTest {
     MockWarehouse mwh = new MockWarehouse();
     String ipod = "ipod";
     int quantity = 50;
+    Order order = new Order(ipod, quantity);
     @Test public void InStockTesting() {
-        Order order = new Order(ipod, quantity);
         order.fill(mwh);
         assertEquals(1, mwh.removeCalled);
         assertEquals(ipod, mwh.removeProduct);
         assertEquals(quantity, mwh.removeQuantity);
     }
     @Test public void OutOfStockTesting() {
-        Order order = new Order(ipod, quantity);
         mwh.returnFromHasInventory = false;
         order.fill(mwh);
         assertEquals(0, mwh.removeCalled);
+    }
+    @Test public void EventTesting() {
+        var meb = new MockEventBus();
+        var rwh = new RealWarehouse(meb);
+        rwh.addProduct(ipod, quantity + 1);
+        order.fill(rwh);
+        assertTrue(meb.asyncCalled);
+        assertFalse(meb.syncCalled);
+        assertEquals(ipod, meb.product);
+        assertEquals(quantity, meb.quantity);
+    }
+    class MockEventBus implements EventBus {
+        boolean asyncCalled, syncCalled;
+        String product;
+        int quantity;
+        @Override
+        public void postAsync(String product, int quantity) {
+            asyncCalled = true;
+            this.product = product;
+            this.quantity = quantity;
+        }
+        @Override
+        public void postSync(String product, int quantity) {
+            syncCalled = true;
+            this.product = product;
+            this.quantity = quantity;
+        }
     }
 }

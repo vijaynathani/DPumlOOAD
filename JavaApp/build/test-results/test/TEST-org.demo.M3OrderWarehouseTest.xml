@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.demo.M3OrderWarehouseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-28T13:22:11" hostname="HOPC555444" time="0.018">
+<testsuite name="org.demo.M3OrderWarehouseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-28T14:51:01" hostname="HOPC555444" time="0.023">
   <properties/>
-  <testcase name="InStockTesting()" classname="org.demo.M3OrderWarehouseTest" time="0.016"/>
+  <testcase name="InStockTesting()" classname="org.demo.M3OrderWarehouseTest" time="0.017"/>
+  <testcase name="EventTesting()" classname="org.demo.M3OrderWarehouseTest" time="0.003"/>
   <testcase name="OutOfStockTesting()" classname="org.demo.M3OrderWarehouseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
