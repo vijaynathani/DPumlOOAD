@@ -45,6 +45,36 @@ namespace feb28 {
 		order.fill(&mwh);
 		EXPECT_EQ(0, mwh.removeCalled);
 	}
+	struct MockEventBus: public IEventBus
+	{
+		bool asyncCalled = false, syncCalled = false;
+		string product;
+		int quantity;
+		void PostAsync(const std::string& product, int quantity) override { 
+			asyncCalled = true; 
+			this->product = product;
+			this->quantity = quantity;
+		}
+		void PostSync(const std::string& product, int quantity)  override { 
+			syncCalled = true; 
+			this->product = product;
+			this->quantity = quantity;
+		}
+	};
+
+	TEST(Warehouse, Events) {
+		const string ipod{ "ipod" };
+		const int quantity{ 50 };
+		Order order{ ipod, quantity };
+		MockEventBus meb;
+		RealWarehouse realWarehouse(&meb);
+		realWarehouse.addProduct(ipod, quantity + 1);
+		order.fill(&realWarehouse);
+		EXPECT_TRUE(meb.asyncCalled);
+		EXPECT_FALSE(meb.syncCalled);
+		EXPECT_EQ(ipod, meb.product);
+		EXPECT_EQ(quantity, meb.quantity);
+	}
 	/*
 	Write the following tests for class Order by mocking out Warehouse
 	1) Testing In Stock:

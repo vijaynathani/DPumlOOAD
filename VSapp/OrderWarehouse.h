@@ -25,7 +25,7 @@ namespace feb28 {
 		int inStock(const std::string& product);
 	public:
 		bool hasInventory(const std::string& product, int quantity);
-		void remove(const std::string& product, int quantity) = 0;
+		void remove(const std::string& product, int quantity);
 		RealWarehouse(IEventBus* ev) : events{ ev } {	}
 		void addProduct(const std::string& product, int quantity);
 	};
