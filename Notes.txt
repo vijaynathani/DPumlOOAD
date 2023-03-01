@@ -463,3 +463,26 @@ In VSapp:
 	OrderWarehouse.h OrderWarehouse.cpp - Don't change to this code 
    Feb28.cpp - Write test using proxy design pattern.
 
+Mar 01:
+If list box has string of more than 2 chars
+	Button should be disabled
+	Radio buttons should have 2 options
+	Spin box should have range 1 to 10
+If button is pressed,
+	list box should be cleared
+   Radio button should have 3 options
+	spin box should have range 1 to 20
+If any item in radio button is selected
+	List box should be disabled
+	Button should be enabled
+	Radio button should have 4 options
+	spin box should have range 1 to 100
+
+
+
+
+
+
+
+
+
