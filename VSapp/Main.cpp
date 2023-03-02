@@ -4,10 +4,10 @@
 #include <map>
 #include <set>
 using namespace std;
-void mar01Main();
+void mar02Main();
 void feb23Main(int argc, char** argv); //Runs all tests
 int main(int argc, char** argv)
 {
-	mar01Main();
+	mar02Main();
 }
 

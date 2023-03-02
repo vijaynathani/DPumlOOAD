@@ -72,6 +72,9 @@
     <ClCompile Include="Mar01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Mar02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

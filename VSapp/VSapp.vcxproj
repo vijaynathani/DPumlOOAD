@@ -143,6 +143,7 @@
     <ClCompile Include="Jan27.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mar01.cpp" />
+    <ClCompile Include="Mar02.cpp" />
     <ClCompile Include="OrderWarehouse.cpp" />
     <ClCompile Include="TicTacToe.cpp" />
   </ItemGroup>
