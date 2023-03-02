@@ -483,3 +483,7 @@ Code for State DP
    Java:  Today's folder
 
 Mar 02:
+Proxy - structural
+Adapter - structural
+Mediator - Behavioral
+State - Behavioral
