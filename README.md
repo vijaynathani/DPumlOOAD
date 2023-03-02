@@ -12,10 +12,10 @@ During the training
 
 Please note
 - All slides, exercises, and course material will be kept in this repository during the training. 
-- Participants can give daily [feedback](https://forms.office.com/r/5kDhe31vzR). The trainer will take a different feedback at the end of training for the entire training.
 - The training is for 32 hours total on dates:
     * Jan: 17,18,19,20,23,24,25,27,30,31
     * Feb: 1,2,3,6,7,8,9,10,13,14,15,16,17,20,21,22,23,24,27,28
     * Mar: 1,2
+- Participants please give [feedback](https://forms.office.com/r/R96jhYuuyP) for the entire training of 32 hours. Please note this **NOT** the daily feedback.
 
 This repository will be deleted one week after the training is over.
